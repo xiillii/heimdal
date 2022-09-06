@@ -1,0 +1,22 @@
+{
+  "name": "heimdalapi",
+  "version": "2.0.0",
+  "description": "An API for secure passwords.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiillii/heimdal.git"
+  },
+  "author": "Romero",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/xiillii/heimdal/issues"
+  },
+  "homepage": "https://github.com/xiillii/heimdal#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
