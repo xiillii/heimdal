@@ -4,6 +4,8 @@ A MERN app for passwords generator
 
 ## API - Backend
 
+API methods must be protected with JWT
+
 ### Get password generator methods
 
 ``` javascript
