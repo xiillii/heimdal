@@ -1,7 +1,10 @@
 const express = require('express')
+const dotenv = require('dotenv')
 const wordsEn = require('./data/words-en')
 const wordsSp = require('./data/words-sp')
 const methods = require('./data/methods')
+
+dotenv.config()
 
 const app = express()
 
@@ -23,4 +26,9 @@ app.get('/api/methods/:id', (req, res) => {
   res.json(method)
 })
 
-app.listen(5000, console.log('Server running on port 5000'))
+const PORT = process.env.PORT || 5000
+
+app.listen(
+  PORT,
+  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
+)
